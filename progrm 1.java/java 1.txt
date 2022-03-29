@@ -1,0 +1,48 @@
+class Product{
+	String pcode, pname;
+	double price;
+	void details(){
+		System.out.println("PRODUCT DETAILS");
+		System.out.println("PCode : "+pcode);
+		System.out.println("PName : "+pname);
+		System.out.println("Price : "+price);
+	}
+}
+public class ProductDetails{
+	public static void main(String args[]){
+		Product p1 = new Product();
+		p1.pcode = "ABCD123";
+		p1.pname = "LG TV";
+		p1.price = 20999;
+		System.out.println("\nProduc 1:-");
+		p1.details();
+		
+		Product p2 = new Product();
+		p2.pcode = "ABCD124";
+		p2.pname = "LG WASHING MACHINE ";
+		p2.price = 41799;
+		System.out.println("\nProduc 2:-");
+		p2.details();
+				
+		Product p3 = new Product();
+		p3.pcode = "ABCD125";
+		p3.pname = "LG FRIDGE";
+		p3.price = 50000;
+		System.out.println("\nProduc 3:-");
+		p3.details();
+				
+		if(p1.price<p2.price && p1.price<p3.price){
+			System.out.println("\n\nProduct with lowest price is :");
+			p1.details();
+		}
+		else if(p2.price < p3.price){
+			System.out.println("\nProduct with lowest price is :\n");
+			p2.details();
+		}
+		else
+		{
+			System.out.println("\nProduct with lowest price is :\n");
+			p3.details();
+		}
+	}
+}
