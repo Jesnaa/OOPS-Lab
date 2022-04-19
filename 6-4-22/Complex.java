@@ -26,7 +26,7 @@ class Complex
                 System.out.println("Second Complex Number:");
                 c2.display();
                 Complex res=add(c1,c2);
-                System.out.println("First Complex Number:");
+                System.out.println("Sum:");
                 res.display();
         }
 }
